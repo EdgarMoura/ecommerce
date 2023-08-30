@@ -1,5 +1,6 @@
 package br.com.EdgarMoura.ecommerce.adapters.in.restcontroller.contract.request;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.br.CPF;
@@ -11,6 +12,7 @@ import javax.validation.constraints.NotNull;
 
 @Setter
 @Getter
+@Builder
 public class CustomerRequest {
 
     @NotEmpty(message = "O campo name não pode ser nulo ou vazio.")
